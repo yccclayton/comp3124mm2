@@ -1,0 +1,37 @@
+Weather Application Using Web APIs (COMP3421-25-P3) 
+
+• Description: A weather application that fetches real-time weather information from
+a public API like HK Observatory or OpenWeatherMap and displays it on a web page.
+Users can search for weather in different cities.
+
+• Mechanism: The application uses JavaScript and AJAX to call the weather API and
+dynamically display weather data in a user-friendly format.
+
+
+Data Analytics Implementation:
+• Analytics Tools Used: State which analytics tools you implemented (e.g., Google
+Analytics, Vercel analytics, Mixpanel, Sentry etc.) and shortly describe their
+purpose.
+• Data Collection: Explain how data is being collected (e.g., user clicks, page views,
+form submissions) and mention any custom events you have set up to track user
+behavior.
+• Outcome and Insights: Mention what insights you aim to collect and how this data
+could improve the app (e.g., identifying drop-off points, tracking engagement, etc.).
+
+
+Data Analytics Implementation (select any two features and show it in a dashboard
+using tools like Grafana)
+Ensure that your project has implemented analytics tools that track key metrics and
+provide insights into user behavior. You can select online visualization tools or local
+deployment using Docker. You need to demonstrate the following:
+• Page Views & User Interactions: Track how users navigate through your app, which
+pages they visit, and which actions they take (e.g., button clicks, form submissions).
+• Custom Events: Implement and track custom events based on important user
+interactions (e.g., successful form submissions, purchases, clicks on specific
+features).
+• Performance Metrics: Track the app’s performance, such as loading times and
+response times using Google Analytics or other performance tools.
+• Geographical metrics: How and where the app is being used.
+• Analytics Dashboard: Create a simple report or dashboard (using tools like Google
+Analytics, Grafana, or Mixpanel) that shows key data points (e.g., user retention,
+traffic, top features).

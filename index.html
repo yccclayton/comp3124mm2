@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Today's Weather</h1>
+    </header>
+
+    <main>
+      <div>
+        <p id="todayDate">Today Date</p>
+      </div>
+
+      <form action="">
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <p class="last-updated">Last updated: <span id="lastUpdated"></span></p>
+      <div class="error-message" style="color: red; display: none">
+        Please enter a city name
+      </div>
+
+      <section class="result">
+        <figure class="cityname" id="city">
+          <figcaption>Hong Kong</figcaption>
+          <img src="https://flagsapi.com/HK/flat/64.png" alt="" />
+        </figure>
+        <figure class="temperature" id="temperature">
+          <img
+            id="temperature-icon"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="Temperature Icon"
+          />
+          <figcaption>
+            <span> 31</span>
+            <sup>o</sup>
+            <span>C</span>
+          </figcaption>
+          <span id="feelsLike">Feels like 31°C</span>
+        </figure>
+        <!-- provided by the API -->
+        <p class="description">Overcast clouds</p>
+
+        <ul>
+          <li>
+            <strong>Clouds</strong>
+            <i class="fa-solid fa-cloud"></i>
+            <span id="clouds">70%</span>
+          </li>
+          <li>
+            <strong>Humidity</strong>
+            <i class="fa-solid fa-droplet"></i>
+            <span id="humidity"> 70%</span>
+          </li>
+          <li>
+            <strong>Wind Speed</strong>
+            <i class="fa-solid fa-wind"></i>
+            <span id="windSpeed"> 10 m/s</span>
+          </li>
+          <li>
+            <strong>Pressure</strong>
+            <i class="fa-solid fa-gauge"></i>
+            <span id="pressure"> 1012 hPa</span>
+          </li>
+          <li>
+            <strong>Visibility</strong>
+            <i class="fa-solid fa-eye"></i>
+            <span id="visibility"> 10 km</span>
+          </li>
+          <li>
+            <strong>Sunrise</strong>
+            <i class="fa-solid fa-sun"></i>
+            <span id="sunrise"> 6:00 AM</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <section id="dashboard-link">
+      <a href="dashboard.html" id="view-dashboard">View Analytics Dashboard</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Weather App</p>
+    </footer>
+    <script src="src/app.js"></script>
+    <script src="src/analytics.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FRN92HFJW6"
+    ></script>
+  </body>
+</html>
